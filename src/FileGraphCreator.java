@@ -83,7 +83,8 @@ public class FileGraphCreator {
             if ((new File(path)).canRead()) {
                 result.add(path);
             } else {
-                System.out.println("\n!Предупреждение: файл " + path + " не удалось прочесть\n");
+                System.out.println("\n!Предупреждение: файл " + path + " не удалось прочесть." +
+                        "Зависимость не установлена\n");
             }
         }
         return result;
