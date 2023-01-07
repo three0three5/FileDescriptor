@@ -1,4 +1,4 @@
 FILE 6
-require 'src/goodExample/f/f2/7'
-require 'src/goodExample/f/4'
-require 'src/goodExample/1'
+require 'f/f2/7'
+require 'f/4'
+require '1'

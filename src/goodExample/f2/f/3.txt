@@ -1,2 +1,2 @@
 FILE 3
-require 'src/goodExample/f/5'
+require 'f/5'

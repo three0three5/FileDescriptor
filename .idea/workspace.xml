@@ -4,21 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a808d771-2956-4a39-b42a-6fb5cf762702" name="Changes" comment="add examples">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/GraphCreator.java" afterDir="false" />
+    <list default="true" id="a808d771-2956-4a39-b42a-6fb5cf762702" name="Changes" comment="add changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ConstStrings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ConstOutputStrings.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CycledGraphException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CycledGraphException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/FileGraphCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FileGraphCreator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FileHeader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FileHeader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FilesFinder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FilesFinder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GraphNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GraphNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GraphSorter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GraphSorter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SimpleMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SimpleMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TxtFilePrinter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TxtFilePrinter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TxtFinder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TxtFinder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cycledExample/1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/cycledExample/1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cycledExample/2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/cycledExample/2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cycledExample/3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/cycledExample/3.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cycledExample/4.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/cycledExample/4.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cycledExample/5.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/cycledExample/5.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cycledExample/6.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/cycledExample/6.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/goodExample/1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/goodExample/1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/goodExample/f/5.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/goodExample/f/5.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/goodExample/f/f2/6.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/goodExample/f/f2/6.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/goodExample/f2/2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/goodExample/f2/2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/goodExample/f2/f/3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/goodExample/f2/f/3.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,18 +45,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="" />
@@ -74,7 +74,8 @@
       <workItem from="1672090693338" duration="13593000" />
       <workItem from="1672172670333" duration="4451000" />
       <workItem from="1672225703897" duration="19898000" />
-      <workItem from="1673087484305" duration="1987000" />
+      <workItem from="1673087484305" duration="2087000" />
+      <workItem from="1673091881166" duration="1815000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1672091464181</created>
@@ -97,7 +98,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672256533668</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="add changes">
+      <created>1673091624275</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1673091624275</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -118,7 +126,8 @@
     <MESSAGE value="initial commit" />
     <MESSAGE value="Initial commit" />
     <MESSAGE value="add examples" />
-    <option name="LAST_COMMIT_MESSAGE" value="add examples" />
+    <MESSAGE value="add changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="add changes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -132,6 +141,16 @@
           <url>file://$PROJECT_DIR$/src/GraphSorter.java</url>
           <line>74</line>
           <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Main.java</url>
+          <line>11</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Main.java</url>
+          <line>12</line>
+          <option name="timeStamp" value="12" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

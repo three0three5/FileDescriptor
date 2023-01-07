@@ -8,10 +8,11 @@ public class Main {
         while (menu.isRunning()) {
             menu.proceed();
         }
-        FilesFinder finder = new TxtFinder(menu.getFolderPath());
+        String path = menu.getFolderPath();
+        FilesFinder finder = new TxtFinder(path);
         List<File> txtFiles = finder.getFiles();
 
-        GraphCreator<File> creator = new FileGraphCreator("txt");
+        GraphCreator<File> creator = new FileGraphCreator("txt", path);
         creator.setNodes(txtFiles);
 
         Map<String, GraphNode<String>> graph = creator.getGraphNodes();

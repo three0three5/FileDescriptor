@@ -6,8 +6,13 @@ import java.util.regex.Pattern;
 public class FileGraphCreator implements GraphCreator<File> {
     private final Map<String, GraphNode<String>> files = new HashMap<>();
     private final String type;
+    private final String rootPath;
 
-    public FileGraphCreator(String type) {
+    public FileGraphCreator(String type, String rootPath) {
+        if (!rootPath.endsWith("/")) {
+            rootPath = rootPath + "/";
+        }
+        this.rootPath = rootPath;
         if (type.isBlank()) {
             this.type = "";
             return;
@@ -78,6 +83,7 @@ public class FileGraphCreator implements GraphCreator<File> {
         Matcher m = p.matcher(fileText);
         while (m.find()) {
             String path = extractPath(m.group(0), type);
+            path = rootPath + path;
             if ((new File(path)).canRead()) {
                 result.add(path);
             } else {
