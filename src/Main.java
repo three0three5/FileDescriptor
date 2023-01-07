@@ -10,7 +10,7 @@ public class Main {
         }
         String path = menu.getFolderPath();
         FilesFinder finder = new TxtFinder(path);
-        List<File> txtFiles = finder.getFiles();
+        List<File> txtFiles = finder.getFiles("txt");
 
         GraphCreator<File> creator = new FileGraphCreator("txt", path);
         creator.setNodes(txtFiles);

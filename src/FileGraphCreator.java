@@ -3,11 +3,19 @@ import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+/**
+ * Класс для создания графа из файлов определенного типа.
+ */
 public class FileGraphCreator implements GraphCreator<File> {
     private final Map<String, GraphNode<String>> files = new HashMap<>();
     private final String type;
     private final String rootPath;
 
+    /**
+     * Конструктор для объектов FileGraphCreator.
+     * @param type Тип (расширение) файлов
+     * @param rootPath Корневая папка, в которой находятся файлы
+     */
     public FileGraphCreator(String type, String rootPath) {
         if (!rootPath.endsWith("/")) {
             rootPath = rootPath + "/";
@@ -19,6 +27,11 @@ public class FileGraphCreator implements GraphCreator<File> {
         }
         this.type = "." + type;
     }
+
+    /**
+     * Сеттер для создания графа типа Map<String, GraphNode<String>>
+     * @param files Список из файлов, из которых нужно сделать граф
+     */
     public void setNodes(List<File> files) {
         for (File x : files) {
             GraphNode<String> file = new FileHeader(x);
@@ -32,6 +45,10 @@ public class FileGraphCreator implements GraphCreator<File> {
         }
     }
 
+    /**
+     * Метод для получения созданного графа.
+     * @return словарь из ключа, являющимся путём файла, и обертки над вершиной графа
+     */
     public Map<String, GraphNode<String>> getGraphNodes() {
         return files;
     }
@@ -78,7 +95,7 @@ public class FileGraphCreator implements GraphCreator<File> {
 
     private ArrayList<String> getRequires(String fileText) {
         ArrayList<String> result = new ArrayList<>();
-        String pattern = "require '[\\\\\\w\\/\\s_\\-.]+'";
+        String pattern = "require '[\\\\\\w/\\s_\\-.]+'";
         Pattern p = Pattern.compile(pattern);
         Matcher m = p.matcher(fileText);
         while (m.find()) {

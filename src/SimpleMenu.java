@@ -6,11 +6,19 @@ public class SimpleMenu implements Menu {
     private final Scanner in = new Scanner(System.in);
     private String path = "src/";
 
+    /**
+     * Возвращает состояние меню.
+     * @return true, если меню еще работает, и false иначе.
+     */
     @Override
     public boolean isRunning() {
         return state != 0;
     }
 
+    /**
+     * Переход меню в новое состояние в зависимости от ответа пользователя.
+     * Работает только в случае, если меню работает (isRunning).
+     */
     @Override
     public void proceed() {
         switch (state) {
@@ -30,6 +38,10 @@ public class SimpleMenu implements Menu {
         }
     }
 
+    /**
+     * Получить путь к корневой папке, выбранной пользователем.
+     * @return строка-путь к корневой папке.
+     */
     @Override
     public String getFolderPath() {
         return path;

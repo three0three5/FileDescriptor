@@ -4,21 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a808d771-2956-4a39-b42a-6fb5cf762702" name="Changes" comment="add changes">
+    <list default="true" id="a808d771-2956-4a39-b42a-6fb5cf762702" name="Changes" comment="fix path">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/FileGraphCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FileGraphCreator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FileHeader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FileHeader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FilesFinder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FilesFinder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GraphSorter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GraphSorter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cycledExample/1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/cycledExample/1.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cycledExample/2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/cycledExample/2.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cycledExample/3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/cycledExample/3.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cycledExample/4.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/cycledExample/4.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cycledExample/5.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/cycledExample/5.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cycledExample/6.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/cycledExample/6.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/goodExample/1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/goodExample/1.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/goodExample/f/5.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/goodExample/f/5.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/goodExample/f/f2/6.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/goodExample/f/f2/6.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/goodExample/f2/2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/goodExample/f2/2.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/goodExample/f2/f/3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/goodExample/f2/f/3.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SimpleMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SimpleMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TxtFilePrinter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TxtFilePrinter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TxtFinder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TxtFinder.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +70,7 @@
       <workItem from="1672172670333" duration="4451000" />
       <workItem from="1672225703897" duration="19898000" />
       <workItem from="1673087484305" duration="2087000" />
-      <workItem from="1673091881166" duration="1815000" />
+      <workItem from="1673091881166" duration="5588000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1672091464181</created>
@@ -105,7 +100,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673091624275</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="fix path">
+      <created>1673093909198</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1673093909198</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -127,19 +129,20 @@
     <MESSAGE value="Initial commit" />
     <MESSAGE value="add examples" />
     <MESSAGE value="add changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="add changes" />
+    <MESSAGE value="fix path" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix path" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/SimpleMenu.java</url>
-          <line>39</line>
+          <line>51</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/GraphSorter.java</url>
-          <line>74</line>
+          <line>93</line>
           <option name="timeStamp" value="10" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">

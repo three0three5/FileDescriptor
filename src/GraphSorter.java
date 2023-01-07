@@ -1,5 +1,9 @@
 import java.util.*;
 
+/**
+ * Класс для топологической сортировки графов.
+ * @param <T> тип ключа вершин графа
+ */
 public class GraphSorter<T> {
     enum Color {
         WHITE,
@@ -18,6 +22,11 @@ public class GraphSorter<T> {
     private final Map<T, ColoredNode<T>> graph = new HashMap<>();
     private final List<T> sorted = new ArrayList<>();
 
+    /**
+     * Конструктор для объектов класса GraphSorter.
+     * Без графа такой объект не имеет смысла, поэтому параметр graph обязателен
+     * @param graph словарь из ключей и обёрток для вершин графа
+     */
     public GraphSorter(Map<T, GraphNode<T>> graph) {
         for (T key : graph.keySet()) {
             ColoredNode<T> node = new ColoredNode<>(graph.get(key), Color.WHITE);
@@ -25,6 +34,11 @@ public class GraphSorter<T> {
         }
     }
 
+    /**
+     * Метод-сеттер для многоразового использования объекта GraphSorter.
+     * Позволяет работать с другими графами в случае необходимости
+     * @param graph словарь из ключей и обёрток для вершин графа
+     */
     public void setGraph(Map<T, GraphNode<T>> graph) {
         for (T key : graph.keySet()) {
             ColoredNode<T> node = new ColoredNode<>(graph.get(key), Color.WHITE);
@@ -32,6 +46,11 @@ public class GraphSorter<T> {
         }
     }
 
+    /**
+     * Возвращает список ключей того типа, которым был инициализирован GraphSorter.
+     * Список отсортирован в топологическом порядке.
+     * @return топологически отсортированный List<T></>
+     */
     public List<T> getSortedKeys() {
         try {
             sortKeys();
