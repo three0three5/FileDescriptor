@@ -1,6 +1,4 @@
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.HashSet;
+import java.util.*;
 
 public class GraphSorter<T> {
     enum Color {
@@ -17,24 +15,24 @@ public class GraphSorter<T> {
             this.color = color;
         }
     }
-    private final HashMap<T, ColoredNode<T>> graph = new HashMap<>();
-    private final ArrayList<T> sorted = new ArrayList<>();
+    private final Map<T, ColoredNode<T>> graph = new HashMap<>();
+    private final List<T> sorted = new ArrayList<>();
 
-    public GraphSorter(HashMap<T, GraphNode<T>> graph) {
+    public GraphSorter(Map<T, GraphNode<T>> graph) {
         for (T key : graph.keySet()) {
             ColoredNode<T> node = new ColoredNode<>(graph.get(key), Color.WHITE);
             this.graph.put(key, node);
         }
     }
 
-    public void setGraph(HashMap<T, GraphNode<T>> graph) {
+    public void setGraph(Map<T, GraphNode<T>> graph) {
         for (T key : graph.keySet()) {
             ColoredNode<T> node = new ColoredNode<>(graph.get(key), Color.WHITE);
             this.graph.put(key, node);
         }
     }
 
-    public ArrayList<T> getSortedKeys() {
+    public List<T> getSortedKeys() {
         try {
             sortKeys();
         } catch (CycledGraphException e) {
@@ -43,8 +41,8 @@ public class GraphSorter<T> {
         return sorted;
     }
 
-    private HashSet<T> getStartPoints() {
-        HashSet<T> result = new HashSet<>();
+    private Set<T> getStartPoints() {
+        Set<T> result = new HashSet<>();
         for (T key : graph.keySet()) {
             ColoredNode<T> node = graph.get(key);
             if (node.node.getRequiredBy().isEmpty()) {
@@ -62,7 +60,7 @@ public class GraphSorter<T> {
             return;
         }
         currentNode.color = Color.GRAY;
-        HashSet<T> requires = currentNode.node.getRequires();
+        Set<T> requires = currentNode.node.getRequires();
         if (requires.isEmpty()) {
             if (currentNode.color != Color.BLACK) {
                 currentNode.color = Color.BLACK;
@@ -85,9 +83,9 @@ public class GraphSorter<T> {
     }
 
     private void sortKeys() throws CycledGraphException {
-        HashSet<T> entryPoints = getStartPoints();
+        Set<T> entryPoints = getStartPoints();
         if (entryPoints.isEmpty()) {
-            System.out.println(ConstStrings.NO_START_POINTS);
+            System.out.println(ConstOutputStrings.NO_START_POINTS);
             throw new CycledGraphException();
         }
         for (T start : entryPoints) {

@@ -1,9 +1,9 @@
-import java.util.HashSet;
+import java.util.Set;
 
 public interface GraphNode<K> {
     K getKey();
     void addRequires(K other);
     void addRequiredBy(K other);
-    HashSet<K> getRequires();
-    HashSet<K> getRequiredBy();
+    Set<K> getRequires();
+    Set<K> getRequiredBy();
 }

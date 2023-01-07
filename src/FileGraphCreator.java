@@ -1,12 +1,10 @@
 import java.io.*;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.HashSet;
+import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class FileGraphCreator {
-    private final HashMap<String, GraphNode<String>> files = new HashMap<>();
+public class FileGraphCreator implements GraphCreator<File> {
+    private final Map<String, GraphNode<String>> files = new HashMap<>();
     private final String type;
 
     public FileGraphCreator(String type) {
@@ -16,7 +14,7 @@ public class FileGraphCreator {
         }
         this.type = "." + type;
     }
-    public void setFiles(ArrayList<File> files) {
+    public void setNodes(List<File> files) {
         for (File x : files) {
             GraphNode<String> file = new FileHeader(x);
             this.files.put(file.getKey(), file);
@@ -24,12 +22,12 @@ public class FileGraphCreator {
         try {
             makeConnections();
         } catch (RuntimeException e) {
-            System.out.println(ConstStrings.ERROR_WHILE_WRAPPING);
+            System.out.println(ConstOutputStrings.ERROR_WHILE_WRAPPING);
             System.out.println(e.getMessage());
         }
     }
 
-    public HashMap<String, GraphNode<String>> getFilesGraph() {
+    public Map<String, GraphNode<String>> getGraphNodes() {
         return files;
     }
 
@@ -61,7 +59,7 @@ public class FileGraphCreator {
 
     private void makeReversedConnections() {
         for (String key : files.keySet()) {
-            HashSet<String> requires = files.get(key).getRequires();
+            Set<String> requires = files.get(key).getRequires();
             for (String req : requires) {
                 GraphNode<String> otherFile = files.get(req);
                 otherFile.addRequiredBy(key);

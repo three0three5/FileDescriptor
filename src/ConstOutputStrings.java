@@ -1,4 +1,4 @@
-public class ConstStrings {
+public class ConstOutputStrings {
     public final static String GREETING = """
             Выберите опцию (введите число):
             1 - Использовать текущий путь корневой папки (src)

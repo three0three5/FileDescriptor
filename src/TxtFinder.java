@@ -1,5 +1,6 @@
 import java.io.File;
 import java.util.ArrayList;
+import java.util.List;
 
 public class TxtFinder implements FilesFinder {
     private final String path;
@@ -9,11 +10,11 @@ public class TxtFinder implements FilesFinder {
     }
 
     @Override
-    public ArrayList<File> getFiles() {
+    public List<File> getFiles() {
         return getFilesFromPath(path);
     }
 
-    private ArrayList<File> getFilesFromPath(String currentPath) {
+    private List<File> getFilesFromPath(String currentPath) {
         ArrayList<File> files = new ArrayList<>();
         File dir = new File(currentPath);
         File[] currentFiles = dir.listFiles();
@@ -28,7 +29,7 @@ public class TxtFinder implements FilesFinder {
                     files.add(x);
                 }
             } else if (x.isDirectory()) {
-                ArrayList<File> fromDirectory = getFilesFromPath(x.getPath());
+                List<File> fromDirectory = getFilesFromPath(x.getPath());
                 files.addAll(fromDirectory);
             }
         }

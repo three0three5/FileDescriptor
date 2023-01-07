@@ -1,10 +1,11 @@
 import java.io.File;
 import java.util.HashSet;
+import java.util.Set;
 
 public class FileHeader implements GraphNode<String> {
     private final String key;
-    private final HashSet<String> requiredNodes = new HashSet<>();
-    private final HashSet<String> requiredByFiles = new HashSet<>();
+    private final Set<String> requiredNodes = new HashSet<>();
+    private final Set<String> requiredByFiles = new HashSet<>();
 
     public FileHeader(File file) {
         this.key = file.getPath();
@@ -22,11 +23,11 @@ public class FileHeader implements GraphNode<String> {
         requiredByFiles.add(other);
     }
 
-    public HashSet<String> getRequires() {
+    public Set<String> getRequires() {
         return requiredNodes;
     }
 
-    public HashSet<String> getRequiredBy() {
+    public Set<String> getRequiredBy() {
         return requiredByFiles;
     }
 

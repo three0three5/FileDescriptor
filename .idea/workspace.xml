@@ -4,9 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a808d771-2956-4a39-b42a-6fb5cf762702" name="Changes" comment="Initial commit">
+    <list default="true" id="a808d771-2956-4a39-b42a-6fb5cf762702" name="Changes" comment="add examples">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/GraphCreator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ConstStrings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ConstOutputStrings.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CycledGraphException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CycledGraphException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/FileGraphCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FileGraphCreator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FileHeader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FileHeader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FilesFinder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FilesFinder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GraphNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GraphNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GraphSorter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GraphSorter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SimpleMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SimpleMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TxtFilePrinter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TxtFilePrinter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TxtFinder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TxtFinder.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,8 +28,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -33,17 +45,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="" />
@@ -60,7 +73,8 @@
       <workItem from="1671994954883" duration="2212000" />
       <workItem from="1672090693338" duration="13593000" />
       <workItem from="1672172670333" duration="4451000" />
-      <workItem from="1672225703897" duration="19792000" />
+      <workItem from="1672225703897" duration="19898000" />
+      <workItem from="1673087484305" duration="1987000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1672091464181</created>
@@ -76,7 +90,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672255903162</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="add examples">
+      <created>1672256533668</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1672256533668</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -96,7 +117,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit" />
     <MESSAGE value="Initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
+    <MESSAGE value="add examples" />
+    <option name="LAST_COMMIT_MESSAGE" value="add examples" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -108,7 +130,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/GraphSorter.java</url>
-          <line>76</line>
+          <line>74</line>
           <option name="timeStamp" value="10" />
         </line-breakpoint>
       </breakpoints>

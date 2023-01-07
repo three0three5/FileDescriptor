@@ -15,7 +15,7 @@ public class SimpleMenu implements Menu {
     public void proceed() {
         switch (state) {
             case 1 -> {
-                System.out.println(ConstStrings.GREETING);
+                System.out.println(ConstOutputStrings.GREETING);
                 changeState(1, 2);
                 if (state != 0) {
                     ++state;
@@ -23,7 +23,7 @@ public class SimpleMenu implements Menu {
             }
             case 2 -> state = 0;
             case 3 -> {
-                System.out.println(ConstStrings.CHANGE_PATH);
+                System.out.println(ConstOutputStrings.CHANGE_PATH);
                 changePath();
                 state = 0;
             }
@@ -40,7 +40,7 @@ public class SimpleMenu implements Menu {
         File dir = new File(path);
         File[] arrFiles = dir.listFiles();
         while (!dir.exists() || arrFiles == null) {
-            System.out.println(ConstStrings.WRONG_PATH);
+            System.out.println(ConstOutputStrings.WRONG_PATH);
             path = in.next();
             dir = new File(path);
             arrFiles = dir.listFiles();
@@ -54,7 +54,7 @@ public class SimpleMenu implements Menu {
         String str = in.next();
         while (!str.matches("[0-9]+") ||
                 Integer.parseInt(str) < lower || Integer.parseInt(str) > higher) {
-            System.out.println(ConstStrings.REWRITE);
+            System.out.println(ConstOutputStrings.REWRITE);
             str = in.next();
         }
         state = Integer.parseInt(str);
